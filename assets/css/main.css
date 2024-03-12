@@ -1,5 +1,5 @@
 :root {
-    --black:#000;
+    --black: #000;
     --dark: #212529;
     --white: #fefefe;
     --primary: #1eab90;
@@ -8,24 +8,59 @@
 
 html,
 body {
-    background-color: var(--black);
+    background-color: var(--white);
 }
-.text-gray
-{
-    color:var(--gray)!important;
+
+.text-gray {
+    color: var(--gray) !important;
 }
-main
-{
+
+main {
     position: relative;
-    z-index:2;
-    background-color: rgba(254, 254, 254,0.1);
+    z-index: 2;
+    background-color: rgba(254, 254, 254, 0.1);
     height: 100vh;
 }
+
+.content.zoomIn,
+#particles-js.zoomIn {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+    -webkit-animation-duration: .7s;
+    animation-duration: .7s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes zoomIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
 #particles-js {
     height: 100vh;
     width: 100vw;
     position: absolute;
-    top:0;
+    top: 0;
     right: 0;
     bottom: 0;
     left: 0;
@@ -42,7 +77,11 @@ main
     transform: scaleX(-1);
     transition: .4s all ease;
 }
-
+.burger-container:hover .bar
+{
+    width: 40px !important;
+    background-color: var(--primary);
+}
 .bar {
     height: 4px;
     background-color: var(--white);
@@ -170,16 +209,20 @@ main
     margin-top: 30px;
     /* 30px top margin to avoid conflict with the close button on smaller screens */
 }
+
 .overlay-content a {
     text-decoration: none;
-    color: #ffff;
-    display: block; /* Display block instead of inline */
-    transition: 0.3s; /* Transition effects on hover (color) */
+    color: var(--gray);
+    display: block;
+    /* Display block instead of inline */
+    transition: 0.3s;
+    /* Transition effects on hover (color) */
     padding: 10px;
     font-size: 30px;
     opacity: .7;
     font-weight: 600;
-  }
+    text-transform: uppercase;
+}
 
 .navOverlay.fadeInDown {
     -webkit-animation-name: fadeInDown;
@@ -253,26 +296,74 @@ main
         display: none;
     }
 }
-.nav-icons{
+
+.nav-icons {
     transition: .3s ease;
 }
-.nav-icons:hover
-{
+
+.nav-icons:hover {
     color: var(--white) !important;
 }
+
 .vl {
     border-left: 6px solid var(--gray);
-  height: 120px;
-  position: relative;
-  left: 50%;
-  margin-left: -3px;
-  top: 0;
-  }
-.sidenav
-{
-    top:30vh;
+    height: 120px;
+    position: relative;
+    left: 50%;
+    margin-left: -3px;
+    top: 0;
 }
-.navlink
-{
-    text-transform: uppercase;
+
+.sidenav {
+    top: 30vh;
+}
+
+
+.main-content {
+    position: relative;
+    z-index: 3;
+}
+
+a.navlink:hover {
+    color: var(--primary) !important;
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+
+    50% {
+        -webkit-transform: scale3d(1.05, 1.05, 1.05);
+        transform: scale3d(1.05, 1.05, 1.05);
+    }
+
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+
+    50% {
+        -webkit-transform: scale3d(1.05, 1.05, 1.05);
+        transform: scale3d(1.05, 1.05, 1.05);
+    }
+
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
 }

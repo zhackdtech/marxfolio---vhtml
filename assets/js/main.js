@@ -14,9 +14,9 @@ $("#burgerMenuBtn").on("click", function () {
     navSlideUp();
   }
   console.log(navCounter);
-  // slideInLeftAnim();
 });
 $(".navlink").on("click", function () {
+  removeAll();
   slideInLeftAnim();
   console.log("nav clicked");
 });
@@ -29,15 +29,27 @@ function navSlideUp()
 {
   $(".navOverlay").toggleClass("fadeOutUp");
   navCounter = 0;
-  setTimeout(() => {  removeUnnecessaryClass(); }, 100);
+  setTimeout(() => {  removeUnnecessaryClass(); }, 300);
 }
 function removeUnnecessaryClass()
 {
+  // remove the classes of overlay
   $(".navOverlay").removeClass("fadeOutUp");
   $(".navOverlay").removeClass("fadeInDown");
 }
 function slideInLeftAnim() {
   // play the animation then remove its class when it's done
   $(".animSlider").toggleClass("slideInLeft");
-setTimeout(() => {  $(".animSlider").removeClass("slideInLeft"); }, 700);
+  setTimeout(() => {  $(".animSlider").removeClass("slideInLeft"); }, 700);
 }
+function removeAll()
+{
+  navSlideUp()
+  $(".bar1").removeClass("change");
+  $(".bar2").removeClass("change");
+  $(".bar3").removeClass("change");
+}
+$(document).ready(function(){
+  $('.content').toggleClass("zoomIn");
+  $('#particles-js').toggleClass("zoomIn");
+})
