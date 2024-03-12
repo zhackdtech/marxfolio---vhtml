@@ -40,7 +40,8 @@ instructions.
 <br>
 Download files then open index.html in your browser
 <br>
-or click here [live](https://zhackdtech.github.io/marxfolio---vhtml/)
+or click here 
+[live](https://zhackdtech.github.io/marxfolio---vhtml/)
 
 
 ## 📋 License
