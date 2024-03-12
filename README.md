@@ -7,15 +7,13 @@
 
 - 🌱 I’m currently learning **Web Development**
 
-- 📝 I regularly write articles on [https://zhackdtech.github.io/portfolio-wilmarx/](https://zhackdtech.github.io/portfolio-wilmarx/)
-
 - 📫 How to reach me **wilmarx.cayabyab@gmail.com**
 
 
 ## 📝 Description
 
 **Marxfolio** is a well-designed and fully functional portfolio website that is built with
-React.js and Three.js. It is a fully responsive website that works well on all devices.
+HTML5, CSS3, JavaScript, Bootstrap5, and JQuery. It is a fully responsive website that works well on all devices.
 
 </details>
 
