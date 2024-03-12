@@ -23,24 +23,12 @@ React.js and Three.js. It is a fully responsive website that works well on all d
 
 <details><summary><b>Marxfolio</b> is built using the following technologies:</summary>
 
-- [TypeScript](https://www.typescriptlang.org/): TypeScript is a typed superset of JavaScript that
-  compiles to plain JavaScript.
-- [Vite](https://vitejs.dev/): Vite is a build tool that aims to provide a faster and leaner
-  development experience for modern web projects.
-- [React.js](https://reactjs.org/): React is a free and open-source front-end JavaScript library for
-  building user interfaces or UI components.
-- [Three.js](https://threejs.org/): Three.js is a cross-browser JavaScript library and application
-  programming interface used to create and display animated 3D computer graphics in a web browser
-  using WebGL.
-- [Framer Motion](https://www.framer.com/motion/): Framer Motion is a production-ready motion
-  library for React.
-- [Tailwind CSS](https://tailwindcss.com/): Tailwind CSS is a utility-first CSS framework for
-  rapidly building custom user interfaces.
-- [ESLint](https://eslint.org/): ESLint is a static code analysis tool for identifying problematic
-  patterns found in JavaScript code.
-- [Prettier](https://prettier.io/): Prettier is an opinionated code formatter.
-- [Vercel](https://vercel.com/): Vercel is a cloud platform for frontend developers, providing the
-  frameworks, workflows, and infrastructure to build a faster, more personalized Web.
+- [HTML5](https://www.w3schools.com/html/): HTML is the standard markup language for creating Web pages.
+- [CSS](https://www.w3schools.com/css/default.asp): CSS is the language we use to style a Web page.
+- [JS](https://www.w3schools.com/js/default.asp): JavaScript is an object-oriented computer programming language commonly used to create interactive effects within web browsers.
+- [BOOTSTRAP5](https://getbootstrap.com/): Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins.
+- [JQUERY](https://jquery.com/): jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers.
+
 
 </details><br/>
 
