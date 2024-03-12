@@ -18,7 +18,7 @@
         <link rel="stylesheet" href="assets/css/main.css">
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     </head>
-    <body class="overflow-x-hidden">
+    <body class="overflow-hidden">
         </div>
         <main>
             <!-- navbar -->
@@ -38,11 +38,43 @@
                     <a class="navlink" href="#">Contact</a>
                 </div>
             </div>
+            
             <!-- this div will slide out full screen when navlinks are clicked -->
-            <div class="animSlider vh-100 vw-100 position-absolute"></div>
+            <div class="vh-100 vw-100 position-absolute"></div>
+            <div class="d-none d-lg-block sidenav vh-100 position-absolute px-3">
+                <div class="vl my-2"></div>
+                <a class="nav-icons d-block fs-4 py-2 text-gray" href="">
+                    <i class="fa-brands fa-square-instagram"></i>
+                </a>
+                <a class="nav-icons d-block fs-4 py-2 text-gray" href="">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a class="nav-icons d-block fs-4 py-2 text-gray" href="">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a class="nav-icons d-block fs-4 py-2 text-gray" href="">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+            <div class="d-flex d-lg-none fixed-bottom justify-content-center py-3">
+                <a class="nav-icons fs-4 px-3 text-gray" href="">
+                    <i class="fa-brands fa-square-instagram"></i>
+                </a>
+                <a class="nav-icons fs-4 px-3 text-gray" href="">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a class="nav-icons fs-4 px-3 text-gray" href="">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a class="nav-icons fs-4 px-3 text-gray" href="">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+            <div class="container">
+                main content goes here
+            </div>
         </main>
-        
-        <div id="particles-js">
+        <div id="particles-js"></div>
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
@@ -58,118 +90,79 @@
         <script src="assets/js/live.js"></script>
         <script src="assets/js/particle.js"></script>
         <script>
-particlesJS("particles-js", 
-{
-  "particles": {
-    "number": {
-      "value": 80,
-      "density": {
-        "enable": true,
-        "value_area": 800
-      }
-    },
-    "color": {
-      "value": "#ffffff"
-    },
-    "shape": {
-      "type": "circle",
-      "stroke": {
-        "width": 0,
-        "color": "#000000"
-      },
-      "polygon": {
-        "nb_sides": 5
-      },
-      "image": {
-        "src": "img/github.svg",
-        "width": 100,
-        "height": 100
-      }
-    },
-    "opacity": {
-      "value": 0.5,
-      "random": false,
-      "anim": {
-        "enable": false,
-        "speed": 1,
-        "opacity_min": 0.1,
-        "sync": false
-      }
-    },
-    "size": {
-      "value": 3,
-      "random": true,
-      "anim": {
-        "enable": false,
-        "speed": 40,
-        "size_min": 0.1,
-        "sync": false
-      }
-    },
-    "line_linked": {
-      "enable": true,
-      "distance": 150,
-      "color": "#ffffff",
-      "opacity": 0.4,
-      "width": 1
-    },
-    "move": {
-      "enable": true,
-      "speed": 6,
-      "direction": "none",
-      "random": false,
-      "straight": false,
-      "out_mode": "out",
-      "bounce": false,
-      "attract": {
-        "enable": false,
-        "rotateX": 600,
-        "rotateY": 1200
-      }
-    }
-  },
-  "interactivity": {
-    "detect_on": "canvas",
-    "events": {
-      "onhover": {
-        "enable": true,
-        "mode": "repulse"
-      },
-      "onclick": {
-        "enable": true,
-        "mode": "push"
-      },
-      "resize": true
-    },
-    "modes": {
-      "grab": {
-        "distance": 400,
-        "line_linked": {
-          "opacity": 1
-        }
-      },
-      "bubble": {
-        "distance": 400,
-        "size": 40,
-        "duration": 2,
-        "opacity": 8,
-        "speed": 3
-      },
-      "repulse": {
-        "distance": 200,
-        "duration": 0.4
-      },
-      "push": {
-        "particles_nb": 4
-      },
-      "remove": {
-        "particles_nb": 2
-      }
-    }
-  },
-  "retina_detect": true
-}
-);
+        particlesJS("particles-js", 
+        {
+        "particles": {
+            "number": {
+            "value": 80,
+            "density": {
+                "enable": true,
+                "value_area": 800
+            }
+            },
+            "color": {
+            "value": "#ffffff"
+            },
+            "shape": {
+            "type": "circle",
+            "stroke": {
+                "width": 0,
+                "color": "#000000"
+            },
+            "polygon": {
+                "nb_sides": 5
+            },
+            "image": {
+                "src": "img/github.svg",
+                "width": 100,
+                "height": 100
+            }
+            },
+            "opacity": {
+            "value": 0.5,
+            "random": false,
+            "anim": {
+                "enable": false,
+                "speed": 1,
+                "opacity_min": 0.1,
+                "sync": false
+            }
+            },
+            "size": {
+            "value": 3,
+            "random": true,
+            "anim": {
+                "enable": false,
+                "speed": 40,
+                "size_min": 0.1,
+                "sync": false
+            }
+            },
+            "line_linked": {
+            "enable": true,
+            "distance": 150,
+            "color": "#ffffff",
+            "opacity": 0.4,
+            "width": 1
+            },
+            "move": {
+            "enable": true,
+            "speed": 6,
+            "direction": "none",
+            "random": false,
+            "straight": false,
+            "out_mode": "out",
+            "bounce": false,
+            "attract": {
+                "enable": false,
+                "rotateX": 600,
+                "rotateY": 1200
+                }
+            }
+        },
+            "retina_detect": true
+            }
+        );
         </script>
     </body>
 </html>
